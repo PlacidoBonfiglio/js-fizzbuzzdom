@@ -16,12 +16,16 @@ let numbers = '';
 
 for (let i = 1; i <= 100; i++) {
     numbers += i;
-    //console.log(i)
-}
-
-if (numbers % 3 === 0) {
-let fizz = 'fizz';
-console.log(fizz);
+    
+    //Controllo tramite IF se i numeri sono multipli di 3 / 5 o entrambi
+    if (i % 15 === 0)
+        console.log('FizzBuzz');
+    else if (i % 3 === 0)
+        console.log('Fizz');
+    else if (i % 5 === 0)
+        console.log('Buzz');
+    else
+        console.log(i);
 }
 
 //target.innerHTML = numbers;
