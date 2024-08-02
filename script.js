@@ -11,10 +11,13 @@ console.log('JS OK');
 const target = document.getElementById('target');
 
 // ELABORAZIONE
+// calcolo 1 - 100
 let numbers = '';
 
 for (let i = 1; i <= 100; i++) {
-    console.log(`${i}`);
-    //numbers += `<div class="num">${i}</div`;
+    numbers += i;
+    console.log(`${i}`)
 }
+
+//target.innerHTML = numbers;
 
