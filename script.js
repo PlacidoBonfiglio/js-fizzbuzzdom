@@ -16,7 +16,12 @@ let numbers = '';
 
 for (let i = 1; i <= 100; i++) {
     numbers += i;
-    console.log(`${i}`)
+    //console.log(i)
+}
+
+if (numbers % 3 === 0) {
+let fizz = 'fizz';
+console.log(fizz);
 }
 
 //target.innerHTML = numbers;
