@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #083B4C;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.fizz {
+    width: 100px;
+    height: 100px;
+    background-color: #0BD6A1;
+}
+
+.buzz {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD166;
+}
+
+.fizzbuzz {
+    width: 100px;
+    height: 100px;
+    background-color: #F0466F;
+}

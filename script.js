@@ -11,13 +11,18 @@ console.log('JS OK');
 const target = document.getElementById('target');
 
 // ELABORAZIONE
-// calcolo 1 - 100
 let numbers = '';
+
+const fizzBuzz = 'FizzBuzz';
+
+const fizz = 'Fizz';
+
+const buzz = 'Buzz';
 
 for (let i = 1; i <= 100; i++) {
     numbers += i;
     
-    //Controllo tramite IF se i numeri sono multipli di 3 / 5 o entrambi
+    //Controllo tramite IF se i numeri sono multipli di 3 / 5 o entrambi e stampo in console
     if (i % 15 === 0)
         console.log('FizzBuzz');
     else if (i % 3 === 0)
@@ -28,5 +33,5 @@ for (let i = 1; i <= 100; i++) {
         console.log(i);
 }
 
-//target.innerHTML = numbers;
+target.innerHTML = numbers;
 
