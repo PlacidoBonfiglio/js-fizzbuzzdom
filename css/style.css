@@ -1,27 +1,49 @@
 body {
-    height: 100vh;
     width: 100%;
     background-color: #083B4C;
+    margin-bottom: 100px;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 7rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+#target {
+    gap: 45px;
+}
+
+.number,
+.fizz,
+.buzz,
+.fizzbuzz {
+    margin: 0;
+    max-width: 150px;
+    max-height: 150px;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 50%;
+    box-shadow: 3px 5px 10px rgb(22, 22, 22);
+}
+
+.number {
+    background-color: #1389B2;
 }
 
 .fizz {
-    width: 100px;
-    height: 100px;
     background-color: #0BD6A1;
 }
 
 .buzz {
-    width: 100px;
-    height: 100px;
     background-color: #FFD166;
 }
 
 .fizzbuzz {
-    width: 100px;
-    height: 100px;
     background-color: #F0466F;
+}
+
+p {
+    line-height: 150px;
+    text-align: center;
 }

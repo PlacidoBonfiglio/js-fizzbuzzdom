@@ -11,27 +11,29 @@ console.log('JS OK');
 const target = document.getElementById('target');
 
 // ELABORAZIONE
-let numbers = '';
+let content = '';
 
+// Creazione variabili
 const fizzBuzz = 'FizzBuzz';
-
 const fizz = 'Fizz';
-
 const buzz = 'Buzz';
 
 for (let i = 1; i <= 100; i++) {
-    numbers += i;
     
     //Controllo tramite IF se i numeri sono multipli di 3 / 5 o entrambi e stampo in console
-    if (i % 15 === 0)
+    if (i % 15 === 0) {
         console.log('FizzBuzz');
-    else if (i % 3 === 0)
+        content += `<p class="fizzbuzz">${fizzBuzz}</p>`;
+    } else if (i % 3 === 0) {
         console.log('Fizz');
-    else if (i % 5 === 0)
+        content += `<p class="fizz">${fizz}</p>`;
+    } else if (i % 5 === 0) {
         console.log('Buzz');
-    else
+        content += `<p class="buzz">${buzz}</p>`;
+    } else {
         console.log(i);
+        content += `<p class="number">${i}</p>`;
+    }
 }
 
-target.innerHTML = numbers;
-
+target.innerHTML = content;
